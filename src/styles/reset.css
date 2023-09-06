@@ -1,0 +1,42 @@
+@import url("./motion.css");
+
+html {
+  --text-color: rgb(0 0 0 / 85%);
+  --text-color-1: rgb(0 0 0 / 45%);
+  --text-color-2: rgb(0 0 0 / 20%);
+  --bg-color: #fff;
+  --hover-color: rgb(0 0 0 / 2.5%);
+  --bg-color-container: #f0f2f5;
+}
+
+html.dark {
+  --text-color: rgb(229 224 216 / 85%);
+  --text-color-1: rgb(229 224 216 / 45%);
+  --text-color-2: rgb(229 224 216 / 45%);
+  --bg-color: rgb(36 37 37);
+  --hover-color: rgb(42 44 55);
+  --bg-color-container: rgb(42 44 44);
+}
+
+body {
+  overflow: hidden;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  text-rendering: optimizelegibility;
+}
+
+#app,
+body,
+html {
+  height: 100%;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
